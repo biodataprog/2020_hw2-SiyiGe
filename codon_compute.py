@@ -126,8 +126,8 @@ with gzip.open(file2, "rt") as fh:
 
 print("Codon", "Frequency in Sp1", "Frequency in Sp2")
 
-for codon in codons_dict_1:
-    print("{}".format(codon),"\t",codons_dict_1[codon], "\t", codons_dict_2[codon])
 
+for codon in codons_dict_1:
+    print("{}".format(codon),"\t","{:.2f}%".format(codons_dict_1[codon]/(a/3)*100), "\t", "{:.2f}%".format(codons_dict_2[codon]/(b/3)*100))
 
 
